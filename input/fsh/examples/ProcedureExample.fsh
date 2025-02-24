@@ -6,6 +6,7 @@ Description: "Esempio di una procedura di impianto di un defibrillatore cardiaco
 
 // #2067001 
 // "Impianto di apparecchi acustici elettromagnetici"
+* id = "b4bd1cab-efab-4ba1-bf3f-8da5880e5c0e"
 * status = #completed
 * performedDateTime = "2025-02-02"
 * category.coding.code = #387713003 

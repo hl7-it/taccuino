@@ -10,7 +10,6 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
 * extension[dataRegistrazione].valueDateTime
 
-
 * date 1..1
 * date ^short = "Data di emissione del documento"
 
@@ -19,7 +18,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * type 1..1
 * type ^short = "Tipologia di documento (medio livello)"
-* type from $vs-typeCode (required)
+* type from $VS_Loinc (required)
 
 * subject only Reference (PatientTaccuino or Device)
 
@@ -30,13 +29,14 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * content.attachment.size ^short = "Size"
 * content.attachment.language ^short = "Lingua del Documento"
 
+
 * context.event ^short = "Regole di accesso" 
+* context.event.coding.system from $vs-accessRules (required)
 
-* context.event.coding.system from $vs-accessRules
-
+* category 1..1
 * category ^short = "Tipo documento (alto livello)"
+* category.coding.system from $vs-class-code 
 * category.coding.code = #TAC (exactly)
-* category.coding.system = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5" (exactly)
 * category.coding.display = "Taccuino"
 
 * content.attachment.url ^short = "Identificativo repository"

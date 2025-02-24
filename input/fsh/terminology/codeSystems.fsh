@@ -36,16 +36,55 @@ Description: "Nessuna allergia oppure agente non noto"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-CodeSystem: CsTypeCode
-Id: type-code
-Title: "Tipologia di documento"
-Description: "Tipologia di documento"
+CodeSystem: CsRegoleAccesso
+Id: access-rules
+Title: "Atti clinici e regole di accesso"
+Description: "Atti clinici e regole di accesso"
 * ^experimental = false
 * ^status = #active
 * ^caseSensitive = true
 * ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.3"
+
+* #P97 "Oscuramento al genitore"
+* #P99 "Oscuramento del documento"
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CodeSystem: CsLoincIT
+Id: cs-loinc-it
+Title: "Codici LOINC"
+Description: "Codici LOINC italiano"
+* ^experimental = false
+* ^status = #active
+* ^language = #it-IT
+* ^caseSensitive = true
+* ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.6.1"
 
+* #85353-1 "Segni vitali, peso, altezza, circonferenza testa, saturazione di ossigeno & BMI"
+* #9279-1 "Respiri"
+* #40443-4 "Frequenza cardiaca^riposo"
+* #2708-6 "Saturazione dell'ossigeno"
+* #8310-5 "Temperatura corporea"
+* #8302-2 "Altezza corporea"
+* #29463-7 "Peso corporeo"
+* #85354-9 "Pressione sanguigna, panel con tutti i figli opzionali"
+* #8480-6 "Sistolica intravascolare"
+* #8462-4 "Diastolica intravascolare"
+* #2093-3 "Colesterolo"
+* #56115-9 "Circonferenza"
+* #14646-4 "Colesterolo.in HDL"
+* #2089-1 "Colesterolo.in LDL"
+* #94085-8 "Dolore, categoria"
+* #72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
+* #4548-4 "Emoglobina A1c/Emoglobina.totale"
+* #42547-0 "Evento:Osservazione"
+* #88365-2 "Glucosio^pre-pasto"
+* #48767-8 "Annotazioni e comment"
+* #56831-1 "Problema, sintomi e segni associati"
+* #3043-7 "Trigliceridi"
+* #8691-8 "Viaggio"
 * #57833-6	"Prescrizione farmaceutica"
 * #60591-5	"Profilo Sanitario Sintetico"
 * #11502-2	"Referto di Laboratorio"
@@ -79,18 +118,30 @@ Description: "Tipologia di documento"
 * #101134-5	"Promemoria di appuntamento"
 * #101133-7	"Consenso alla donazione di organo e/o tessuto"
 * #100971-1	"Cartella clinica"
-
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-CodeSystem: CsRegoleAccesso
-Id: access-rules
-Title: "Atti clinici e regole di accesso"
-Description: "Atti clinici e regole di accesso"
+CodeSystem: CsCND
+Id: cnd
+Title: "Codici Classificazione Nazionale dei Dispositivi Medici (CND)"
+Description: "Codici che classificano il tipo di dispositivo (CND)"
 * ^experimental = false
 * ^status = #active
 * ^caseSensitive = true
 * ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.3"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
 
-* #P97 "Oscuramento al genitore"
-* #P99 "Oscuramento del documento"
+* #J010501 "Defibrillatori Impiantabili Sottocutanei"
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CodeSystem: CsClassCode
+Id: class-code
+Title: "Codice per la classe a cui il documento appartiene."
+Description: "Classe a cui il documento appartiene."
+* ^experimental = false
+* ^status = #active
+* ^caseSensitive = true
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"
+
+* #TAC "Taccuino"

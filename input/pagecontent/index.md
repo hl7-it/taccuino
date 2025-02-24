@@ -1,4 +1,8 @@
 
+<p style="color:blue; font-weight: bold; font-size: 14px;">Avvertenza</p>
+
+La presente guida è *attualmente* in versione **CI-Build** (Continuous Integration Build), che indica una versione in fase di sviluppo continuo, sottoposta a integrazioni e test regolari. Durante questa fase, il contenuto è soggetto a modifiche frequenti e aggiornamenti periodici, al fine di garantire l'accuratezza e la coerenza del materiale. Successivamente, avrà inizio la fase di **ballottaggio**, che segnerà l'avvio della preparazione per la versione finale della guida.
+
 ### Scopo
 
 Questa guida ha lo scopo di definire i profili [HL7 FHIR](https://hl7.org/fhir/R4B) da utilizzare per l'implementazione del Taccuino personale dell'assistito, il quale appartiene al nucleo minimo dei documenti del Fascicolo Sanitario Elettronico (FSE).

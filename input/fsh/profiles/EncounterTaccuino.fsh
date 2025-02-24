@@ -1,6 +1,6 @@
 Profile: EncounterTaccuino
 Parent: Encounter
-Id: Encounter-it-Taccuino
+Id: encounter-it-Taccuino
 Title:    "Encounter - Taccuino personale dell'assistito"
 Description: "Rappresentazione dei contatti tra il paziente e le strutture sanitarie tramite il profilo Encounter"
 

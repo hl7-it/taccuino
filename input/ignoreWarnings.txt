@@ -6,3 +6,5 @@
 
 
 The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== Terminology ==
+HL7 Defined CodeSystems should ensure that every concept has a definition

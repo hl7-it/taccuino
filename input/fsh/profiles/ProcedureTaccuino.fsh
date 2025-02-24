@@ -1,9 +1,9 @@
 Profile: ProcedureTaccuino
 Parent: Procedure
-Id: Procedure-it-Taccuino
+Id: procedure-it-Taccuino
 Title:    "Procedure - Taccuino"
 Description: "Rappresentazione della procedura di impianto protesico tramite il profilo Procedure"
-* . ^short = "Descrive l'evento di impianto protesico subito dal paziente"
+* . ^short = "Descrive la procedura di impianto protesico a cui è stato sottoposto paziente"
 
 //profilare la procedura di impianto della protesi che fa riferminento al profilo deviceTaccuino
 //mettere il performer che è il medico e la location che è l'organizzazione (dove metteremo i codici come in Dossier)

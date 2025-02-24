@@ -27,16 +27,6 @@ Description: "HL7 Iternational - Codici che descrivono perchè non è presente u
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-ValueSet: VsTypeCode
-Id: vs-typeCode
-Title: "Tipologia di documento"
-Description: "Valuset che raccoglie i codici per indicare la tipologia di documento"
-* ^experimental = false
-* codes from system $cs-typeCode
-
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 ValueSet: VsASL
 Id: vs-ASL
 Title: "MDS - ASL"
@@ -50,5 +40,30 @@ Id: vs-access
 Title: "Atti clinici e regole di accesso"
 Description: "Atti clinici e regole di accesso"
 * ^experimental = false
-* codes from system $CS_accessRules
+* codes from system $cs-accessRules
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsLoinc
+Id: vs-loinc-it
+Title: "Codici LOINC"
+Description: "Codici LOINC italiano"
+* ^experimental = false
+* codes from system $CS_Loinc
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsCND
+Id: vs-it-cnd
+Title: "Classificazione Nazionale dei Dispositivi Medici (CND)"
+Description: "Classificazione Nazionale dei Dispositivi Medici (CND)"
+* ^experimental = false
+* codes from system $cs-cnd
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsclassCode
+Id: vs-it-class-code
+Title: "Classe documento"
+Description: "Valuset che rappresenta la classe a cui il documento appartiene"
+* ^experimental = false
+* codes from system $cs-class-code

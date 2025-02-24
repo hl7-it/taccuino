@@ -51,13 +51,13 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 dependencies:
   hl7.fhir.it.base: current
   hl7.fhir.it.terminology: current
-  hl7.terminology : current
+  hl7.terminology : 5.5.0
   #hl7.fhir.it.terminology: dev
   # hl7.fhir.it.base: 0.1.0
 
 pages:
   index.md:
-    title: Taccuino - Home Page                
+    title: Taccuino personale dell'assistito - Home Page                
  # toc.html:
   # title: Sommario  
 #  design.md:
@@ -103,8 +103,87 @@ menu:
     Downloads: downloads.html
  # Copyright: copyright.html 
 
-    
-    
+groups:
+  TaccuinoLogicalModel:
+    name:  Linea Guida Taccuino personale dell'assistito
+    description: Modelli Logici che rappresentano il contenuto informativo del Taccuino personale dell'assistito.
+    resources:
+      - StructureDefinition/DispositivoMedico
+      - StructureDefinition/DocumentoAllegato
+      - StructureDefinition/ContattoStruttura
+      - StructureDefinition/LuogoEvento
+      - StructureDefinition/AssunzioneFarmaco
+      - StructureDefinition/OsservazionePersonale
+      - StructureDefinition/Procedura
+  TaccuinoProfili:
+    name: Profili Risorse Taccuino
+    description: Profili risorse necessarie per produrre il Taccuino FHIR.
+    resources:
+      - StructureDefinition/bundle-it-taccuino
+      - StructureDefinition/device-it-taccuino
+      - StructureDefinition/document-reference-it-taccuino
+      - StructureDefinition/encounter-it-Taccuino
+      - StructureDefinition/medicationAdministration-it-taccuino
+      - StructureDefinition/observation-it-annotazioni-taccuino
+      - StructureDefinition/observation-it-weight-taccuino
+      - StructureDefinition/observation-it-height-taccuino
+      - StructureDefinition/observation-it-temperature-taccuino
+      - StructureDefinition/observation-it-circonferenza-taccuino
+      - StructureDefinition/observation-it-sanguigna-taccuino
+      - StructureDefinition/observation-it-heartrate-taccuino
+      - StructureDefinition/observation-it-respiratoryrate-taccuino
+      - StructureDefinition/observation-it-hdl-taccuino
+      - StructureDefinition/observation-it-ldl-taccuino
+      - StructureDefinition/observation-it-colesterolo-taccuino
+      - StructureDefinition/observation-it-trigliceridi-taccuino
+      - StructureDefinition/observation-it-ossimetria-taccuino
+      - StructureDefinition/observation-it-glicemia-digiuno-taccuino
+      - StructureDefinition/observation-it-emoglobina-glicata-taccuino
+      - StructureDefinition/observation-it-ossimetria-taccuino
+      - StructureDefinition/observation-it-annotazioni-taccuino
+      - StructureDefinition/observation-it-sintomi-taccuino
+      - StructureDefinition/observation-it-dolore-taccuino
+      - StructureDefinition/observation-it-viaggi-taccuino
+      - StructureDefinition/observation-it-eventi-taccuino
+      - StructureDefinition/organization-it-Taccuino
+      - StructureDefinition/procedure-it-Taccuino
+      - StructureDefinition/patient-it-Taccuino
+  TaccuinoExtensions:
+    name: Extensions per le Risorse del Taccuino
+    description: Extensions necessarie per produrre il Taccuino FHIR.
+    resources:
+      - StructureDefinition/registration-date
+      - StructureDefinition/birth-place-ita
+      - StructureDefinition/patient-codeableBirthPlace
+      - StructureDefinition/recordCertification
+      - StructureDefinition/patient-qualification-it
+      - StructureDefinition/patient-occupation-it
+
+  TaccuinoCSTerminology:
+    name: Terminology - CodeSystems  
+    description: Codesystems per il dominio del Taccuino.
+    resources:
+      - CodeSystem/aifa-aic
+      - CodeSystem/no-allergies
+      - CodeSystem/access-rules
+      - CodeSystem/cs-loinc-it
+      - CodeSystem/cnd
+      - CodeSystem/class-code
+
+  TaccuinoVSTerminology:
+    name: Terminology - ValueSets  
+    description: ValueSets per il Taccuino.
+    resources:
+      - ValueSet/aifa-aic
+      - ValueSet/vs-no-allergies
+      - ValueSet/vs-NullFlavor
+      - ValueSet/vs-ASL
+      - ValueSet/vs-access
+      - ValueSet/vs-loinc-it
+      - ValueSet/vs-it-cnd
+      - ValueSet/vs-it-class-code
+
+
 
 # # ╭────────────────────────────────────────────index.md────────────────────────────────────────────╮
 # # │  To use a provided ig-data\input\[pagecontent | pages]\index.[md | xml], delete the            │
