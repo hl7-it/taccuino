@@ -16,7 +16,7 @@ I dati e i documenti inseriti nel Taccuino personale dell’assistito sono infor
 L'Implementation Guide per il Taccuino personale dell'assistito fornisce le linee guida tecniche per l'adozione dello standard FHIR nella gestione dei dati inseriti nel Taccuino all'interno dell'FSE.
 La guida facilita l'interoperabilità tra i sistemi sanitari regionali e nazionali, garantendo la rappresentazione univoca, lo scambio e l'archiviazione delle informazioni personali del paziente.
 
-Il cittadino, o un suo delegato opportunamente autorizzato, avrà la possibilità di **caricare, visualizzare e cancellare** nel proprio FSE documenti relativi ai percorsi di cura personali. I documenti potranno essere sia scannerizzati sia nativamente elettronici e saranno caricati. L'obiettivo principale del Taccuino personale è fornire uno spazio sicuro e accessibile per integrare la propria storia clinica con documenti personali non ancora presenti nel FSE, provenienti da strutture private o pubbliche, a supporto dei percorsi di cura.
+Il cittadino, o un suo delegato opportunamente autorizzato, avrà la possibilità di **caricare, visualizzare e cancellare** nel FSE del cittadino dati e documenti relativi ai percorsi di cura personali. I documenti caricati potranno essere sia copie digitali di documenti cartecei (scannerizzati) sia nativamente elettronici. L'obiettivo principale del Taccuino personale è fornire uno spazio sicuro e accessibile per integrare la propria storia clinica con dati e documenti personali provenienti da strutture private o pubbliche, a supporto dei percorsi di cura.
 
 <figure style="text-align: center;">
   <img src="funzionalitaTaccuinorid.png" />
