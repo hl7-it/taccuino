@@ -14,7 +14,7 @@ Description: "Rappresentazione della somministrazione/assunzione del farmaco/int
 * effectivePeriod.start ^short = "Inizio dell'assunzione del farmaco/integratore"
 * effectivePeriod.end ^short = "Fine dell'assunzione del farmaco/integratore"
 // TODO: capire quali dizionari utilizzare per l'identificazione del farmaco e quali codici mantenere
-
+* obeys medicationEccezioni
 * medication[x] only CodeableConceptTaccuino
 * medication[x] ^short = "Farmaco/integratore assunto o somministrato"
 
@@ -27,3 +27,9 @@ Description: "Rappresentazione della somministrazione/assunzione del farmaco/int
 
 * subject 1..1
 * subject only Reference(PatientTaccuino)
+
+
+Invariant: medicationEccezioni
+Description: "If medication[x].coding[eccezioni] is not empty, coding.text must be present."
+Severity: #error
+Expression: "medication.as(CodeableConcept).coding.where(system = 'http://terminology.hl7.org/CodeSystem/v3-NullFlavor').exists() implies medication.as(CodeableConcept).text.exists()"

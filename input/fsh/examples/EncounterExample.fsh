@@ -9,8 +9,6 @@ Description: "Esempio di contatto/incontro per un ASL"
 * extension[dataRegistrazione].valueDate = "2025-07-27"
 
 * class = $cs-encounterCode#VR "Virtual"
-
-
 * period.start = "2024-02-01"
 * period.end = "2024-02-01"
 

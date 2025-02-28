@@ -36,8 +36,11 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * category 1..1
 * category ^short = "Tipo documento (alto livello)"
+* category.coding.system 1..
 * category.coding.system from $vs-class-code 
+* category.coding.code 1..
 * category.coding.code = #TAC (exactly)
+* category.coding.display 1..
 * category.coding.display = "Taccuino"
 
 * content.attachment.url ^short = "Identificativo repository"

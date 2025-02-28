@@ -9,6 +9,8 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * code.coding.display = "Annotazioni e commenti"
 * valueString 1..1
 * valueString ^short = "Note generali: annotazioni libere"
+* subject 1..1
+* subject only Reference(PatientTaccuino)
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationEventiTaccuino
@@ -25,7 +27,8 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 * effectiveDateTime ^short = "Data evento significativo"
 * value[x] 1..1
 * value[x] ^short = "Evento"
-
+* subject 1..1
+* subject only Reference(PatientTaccuino)
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationSintomiTaccuino
 Parent: Observation
@@ -50,7 +53,8 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 //quale valueset usare per segni e sintomi fa
 * derivedFrom only Reference (Media)
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
-
+* subject 1..1
+* subject only Reference(PatientTaccuino)
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationDoloreTaccuino
 Parent: Observation
@@ -68,7 +72,8 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 * component.code = $CS_Loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
 //* componet.valueCodableConcept scala del dolore
 * bodySite ^short = "Area interessata dal dolore"
-
+* subject 1..1
+* subject only Reference(PatientTaccuino)
 // Proposta 1--> Grado di intensità del dolore, potrebbe essere un integer che con una rule applica una scala da 0 a 10
 // Proposta 2 --> utilizzare il concept come code --> 72514-3 e poi nel concept.valueCodableConcept la scala da 1 a 10, però 
 // l'oid da inserire nel system è quello relativo a LOINC? oppure un  altro? (proposta)
@@ -90,3 +95,5 @@ Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il
 * valueString ^short = "Nome del paese estero"
 * valueString 1..1
 * note ^short = "Note e commenti"
+* subject 1..1
+* subject only Reference(PatientTaccuino)
