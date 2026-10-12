@@ -1,12 +1,13 @@
 
 // //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Organization-Taccuino-Esempio
-InstanceOf: OrganizationTaccuino
+InstanceOf: OrganizationItCore
 Title: "Organization ASL Roma 1"
 Description: "Esempio di organizzazione ASL"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+
 * id = "3c75bf31-bd32-4c0f-9e4a-585d20c08ce4"
 * identifier[0].system = $cs-asl
 * identifier[0].value = #120201
@@ -16,7 +17,7 @@ Description: "Esempio di organizzazione ASL"
 
 // //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Organization-Taccuino-Esempio2
-InstanceOf: OrganizationTaccuino
+InstanceOf: OrganizationItCore
 Title: "Organization Farmacia"
 Description: "Esempio di Farmacia"
 
@@ -31,15 +32,16 @@ Description: "Esempio di Farmacia"
 
 // //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Organization-Taccuino-Esempio3
-InstanceOf: OrganizationTaccuino
+InstanceOf: OrganizationItCore
 Title: "Organization: Struttura di ricovero"
 Description: "Esempio di Struttura di ricovero"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+
 * id = "99f2750b-8cbb-4512-a50f-1539e06fd258"
 * identifier[0].system = $cs-minsan-hsp
-* identifier[0].value = #010626
+* identifier[0].value = #010626k
 * active = 	true
 * type = $cs-entita#cc-priv "Casa di cura privata"
 * name = "POLICLINICO DI MONZA SPA - CASA DI CURA"

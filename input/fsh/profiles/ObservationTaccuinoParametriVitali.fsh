@@ -15,7 +15,7 @@ Description: "Rappresentazione dell'osservazione relativa ai parametri vitali tr
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code from $vs-loinc-pv (extensible)
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
+* performer only Reference(PractitionerItcore or PractitionerRoleItcore or RelatedPerson or OrganizationItCore or PatientTaccuino)
 
 * effectiveDateTime ^short = "Data di misurazione del parametro vitale"
 * effectiveDateTime 1..1
@@ -30,7 +30,7 @@ Description: "Rappresentazione dell'osservazione relativa ai parametri vitali tr
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
-* derivedFrom only Reference (DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)
+* derivedFrom only Reference(DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationPressioneArteriosaTaccuino
@@ -54,7 +54,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione arterio
 * code.coding.display = "Pressione arteriosa, panel con tutti i figli opzionali"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
+* performer only Reference(PractitionerItcore or PractitionerRoleItcore or RelatedPerson or OrganizationItCore or PatientTaccuino)
 
 * effectiveDateTime ^short = "Data e ora di registrazione della pressione arteriosa"
 * effectiveDateTime 1..1

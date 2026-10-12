@@ -1,7 +1,7 @@
 CodeSystem: CsAifaAic
 Id: aifa-aic
 Title: "AIFA - AIC"
-Description: "AIFA - Identifica i farmaci nella loro forma commerciale"
+Description: "AIFA - Identifica i farmaci nella loro forma commerciale. Poiché il sistema di codifica è gestito da AIFA, l'elenco completo dei codici deve essere reperito tramite le fonti ufficiali di AIFA"
 * ^experimental = false
 * ^status = #active
 * ^language = #it-IT
@@ -48,6 +48,7 @@ Description: "Atti clinici e regole di accesso"
 * ^caseSensitive = true
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.3"
+
 
 * #P97 "Oscuramento al genitore"
 * #P99 "Oscuramento del documento"
@@ -152,6 +153,7 @@ Description: "Codici LOINC italiano"
 * #101133-7	"Consenso alla donazione di organo &o tessuto:Osservazione:Pt:{Setting}:Doc:Paziente"
 * #100971-1	"Cartella clinica:-:Pt:^Paziente:-:"
 * #30939-3 "Morbillo, conteggio dose virus in vaccino combinato:Num:Pt:^Paziente:Qn:"
+* #59261-8  "Hemoglobin A1c/Hemoglobin.total standardized per IFCC-RMP for CDT in Blood"
 * #57080-4 "Dispositivo medico impiantato:Osservazione:Pt:^Paziente:Nar:"
 * #LA6111-4 "0"
 * #LA6112-2 "1"

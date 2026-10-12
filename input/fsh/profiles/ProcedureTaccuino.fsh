@@ -16,14 +16,14 @@ Description: "Rappresentazione della procedura di impianto protesico tramite il 
 * code ^short = "Identificativo della procedura di impianto protesico"
 * performedDateTime ^short = "Data di impianto del dispositivo"
 * performer.actor ^short = "Medico che ha effettuato l'impianto del dispositivo"
-* performer.actor only Reference(Practitioner or PractitionerRole)
-* performer.onBehalfOf only Reference(OrganizationTaccuino)
+* performer.actor only Reference(PractitionerItcore or PractitionerRoleItcore)
+* performer.onBehalfOf only Reference(OrganizationItCore)
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * report 1..1
 * report ^short = "Documento emesso in seguito alla procedura, contenente informazioni relative alla data di emissione, al medico e alla struttura che lo ha redatto"
 * report only Reference(DocumentReferenceTaccuino)
-* recorder only Reference (PatientTaccuino or RelatedPerson or Practitioner or PractitionerRole)
-* asserter only Reference (PatientTaccuino or RelatedPerson or Practitioner or PractitionerRole)
+* recorder only Reference(PatientTaccuino or RelatedPerson or PractitionerItcore or PractitionerRoleItcore)
+* asserter only Reference(PatientTaccuino or RelatedPerson or PractitionerItcore or PractitionerRoleItcore)
 * reasonReference only Reference(Condition or Observation or Procedure or DiagnosticReport or DocumentReferenceTaccuino)
-* focalDevice.manipulated only Reference (DeviceTaccuino)
+* focalDevice.manipulated only Reference(DeviceTaccuino)

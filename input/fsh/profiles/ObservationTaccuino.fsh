@@ -19,7 +19,7 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
-* performer only Reference (PatientTaccuino or Practitioner or PractitionerRole or OrganizationTaccuino or CareTeam or RelatedPerson)
+* performer only Reference(PatientTaccuino or Practitioner or PractitionerRole or OrganizationItCore or CareTeam or RelatedPerson)
 * derivedFrom only Reference(DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -47,7 +47,7 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
-* performer only Reference (PatientTaccuino or Practitioner or PractitionerRole or OrganizationTaccuino or CareTeam or RelatedPerson)
+* performer only Reference(PatientTaccuino or Practitioner or PractitionerRole or OrganizationItCore or CareTeam or RelatedPerson)
 * derivedFrom only Reference(DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -127,7 +127,7 @@ Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il
 * code.coding.code = #8691-8
 * code.coding.display = "Viaggio"
 * category = $observation-category#activity
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or PatientTaccuino)
+* performer only Reference(PractitionerItcore or PractitionerRoleItcore or RelatedPerson or PatientTaccuino)
 * effectivePeriod ^short = "Periodo di permanenza all'estero (data inizio e data fine)"
 * effectivePeriod.start 1..1
 * valueString ^short = "Nome del paese estero"
@@ -136,4 +136,4 @@ Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
-* derivedFrom only Reference (DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)
+* derivedFrom only Reference(DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)

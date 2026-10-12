@@ -45,11 +45,14 @@ FSHOnly: false
 jurisdiction: urn:iso:std:iso:3166#IT "Italy"
  
 dependencies:
-  hl7.fhir.it.base: current
+  #hl7.fhir.it.base: current
   #hl7.fhir.it.terminology: current
   #hl7.terminology.r4 : 6.3.0
   #hl7.fhir.it.terminology: dev
   #hl7.fhir.it.base: 0.1.0
+  hl7.fhir.it.core: 0.2.0
+ 
+
 
 pages:
   index.md:
@@ -127,7 +130,6 @@ groups:
       - StructureDefinition/observation-it-dolore-taccuino
       - StructureDefinition/observation-it-viaggi-taccuino
       - StructureDefinition/observation-it-eventi-taccuino
-      - StructureDefinition/organization-it-Taccuino
       - StructureDefinition/procedure-it-Taccuino
       - StructureDefinition/patient-it-Taccuino
   TaccuinoExtensions:
@@ -151,6 +153,7 @@ groups:
       - CodeSystem/cs-loinc-it
       - CodeSystem/cnd
       - CodeSystem/class-code
+      - CodeSystem/minsan-farmacie
 
   TaccuinoVSTerminology:
     name: Terminology - ValueSets  
@@ -159,13 +162,14 @@ groups:
       - ValueSet/aifa-aic
       - ValueSet/vs-no-allergies
       - ValueSet/vs-loinc-tipo-doc
-      - ValueSet/vs-ASL
+      #- ValueSet/vs-ASL
       - ValueSet/vs-access
-      - ValueSet/vs-loinc-it
+      #- ValueSet/vs-loinc-it
       - ValueSet/vs-it-cnd
       - ValueSet/vs-it-class-code
       - ValueSet/vs-loinc-parametri-vitali
       - ValueSet/vs-loinc-scala-dolore
+     
 
 
 

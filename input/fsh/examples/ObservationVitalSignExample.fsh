@@ -6,6 +6,7 @@ Description: "Esempio di un'osservazione: altezza"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "8e8d18f5-3bb4-4f07-bb05-06effd080d96"
 * extension[dataRegistrazione].valueInstant = "2025-07-27T11:30:00+01:00"
 * code = $cs-loinc#8302-2 "Altezza Corporea"
@@ -34,6 +35,7 @@ Description: "Esempio di un'osservazione: circonferenza vita"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "ebb233a8-964f-4f36-a850-f58c6aa27586"
 * extension[dataRegistrazione].valueInstant = "2025-07-27T14:00:00+01:00"
 * code = $cs-loinc#56115-9 "Circonferenza"
@@ -66,6 +68,7 @@ Description: "Esempio di un'osservazione: colesterolo LDL"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "b01f8680-aef2-4430-b65b-85f826c59b59"
 * extension[dataRegistrazione].valueInstant = "2025-03-27T14:00:00+01:00"
 
@@ -75,7 +78,7 @@ Description: "Esempio di un'osservazione: colesterolo LDL"
 
 
 * subject = Reference (Patient-Taccuino-Esempio)
-* performer = Reference (Organization-Taccuino-Esempio3)
+* performer = Reference (Practitioner-Taccuino-Esempio)
 * category = $observation-category#vital-signs
 
 * valueQuantity
@@ -95,6 +98,7 @@ Description: "Esempio di un'osservazione: colesterolo HDL"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "97286c2f-c50b-4b14-93d4-c1cd77054861"
 * extension[dataRegistrazione].valueInstant = "2025-02-25T14:00:00+01:00"
 
@@ -104,7 +108,7 @@ Description: "Esempio di un'osservazione: colesterolo HDL"
 
 
 * subject = Reference (Patient-Taccuino-Esempio)
-* performer = Reference (Organization-Taccuino-Esempio3)
+* performer = Reference (Practitioner-Taccuino-Esempio)
 * category = $observation-category#vital-signs
 
 * referenceRange.low = 50.0 'mg/dL' "mg/dL"
@@ -126,6 +130,7 @@ Description: "Esempio di un'osservazione: colesterolo totale"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "cd6057f1-114b-49e3-a298-fbcfc54fb3dd"
 * extension[dataRegistrazione].valueInstant = "2025-03-02T14:00:00+01:00"
 
@@ -135,7 +140,7 @@ Description: "Esempio di un'osservazione: colesterolo totale"
 
 
 * subject = Reference (Patient-Taccuino-Esempio)
-* performer = Reference (Organization-Taccuino-Esempio3)
+* performer = Reference (Practitioner-Taccuino-Esempio)
 * category = $observation-category#vital-signs
 
 * referenceRange.high = 200.0 $unitOfMeasure#mg/dL
@@ -153,6 +158,7 @@ Description: "Esempio di un'osservazione: colesterolo totale elevato"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "0170d3be-62e7-47cb-a7a2-7bf967ea0064"
 * extension[dataRegistrazione].valueInstant = "2025-03-05T14:00:00+01:00"
 
@@ -162,7 +168,7 @@ Description: "Esempio di un'osservazione: colesterolo totale elevato"
 
 
 * subject = Reference (Patient-Taccuino-Esempio2)
-* performer = Reference (Organization-Taccuino-Esempio3)
+* performer = Reference (Practitioner-Taccuino-Esempio3)
 * category = $observation-category#vital-signs
 
 * referenceRange.high = 200.0 $unitOfMeasure#mg/dL 
@@ -179,6 +185,7 @@ Description: "Esempio di un'osservazione: emoglobina glicata"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "03c49e23-90bf-4d60-8dff-c208420f0e2a"
 * extension[dataRegistrazione].valueInstant = "2025-03-09T14:00:00+01:00"
 
@@ -186,7 +193,7 @@ Description: "Esempio di un'osservazione: emoglobina glicata"
 * effectiveDateTime = "2025-03-01"
 * status = #final
 * subject = Reference (Patient-Taccuino-Esempio)
-* performer = Reference (Organization-Taccuino-Esempio3)
+* performer = Reference (Practitioner-Taccuino-Esempio3)
 * category = $observation-category#vital-signs
 
 * referenceRange.high = 20 $unitOfMeasure#mmol/mol
@@ -206,6 +213,7 @@ Description: "Esempio di un'osservazione: trigliceridi superiori al valore norma
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "06a0f231-aec2-417f-9bc7-4954e6252b92"
 * status = #final
 * code = $cs-loinc#3043-7 
@@ -231,6 +239,7 @@ Description: "Esempio di un'osservazione: trigliceridi"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * status = #final
 * code = $cs-loinc#3043-7
 * code.coding.display = "Trigliceridi"
@@ -255,6 +264,7 @@ Description: "Esempio di un'osservazione: temperatura corporea"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * status = #final
 * code = $cs-loinc#8310-5
 * code.coding.display = "Temperatura corporea"
@@ -277,6 +287,7 @@ Description: "Esempio di un'osservazione: pressione arteriosa versione 1"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * meta.versionId = "1"
 * meta.lastUpdated = "2025-01-07T15:30:00+01:00"
 * status = #final
@@ -307,6 +318,7 @@ Description: "Esempio di un'osservazione: pressione arteriosa versione 2"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * meta.versionId = "2"
 * meta.lastUpdated = "2025-01-08T16:30:00+01:00"
 * status = #final
@@ -339,6 +351,7 @@ Description: "Esempio di un'osservazione: peso corporeo"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * status = #final
 * code = $cs-loinc#29463-7
 * code.coding.display = "Peso corporeo"
@@ -361,6 +374,7 @@ Description: "Esempio di un'osservazione: ossimetria"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * status = #final
 * code = $cs-loinc#2708-6
 * code.coding.display = "Saturazione dell'ossigeno"
@@ -380,6 +394,7 @@ Description: "Esempio di un'osservazione: glicemia a digiuno"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * status = #final
 * code = $cs-loinc#88365-2
 * code.coding.display = "Glucosio^pre-pasto"
@@ -401,6 +416,7 @@ Description: "Esempio di un'osservazione: frequenza respiratoria"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * extension[dataRegistrazione].valueInstant = "2025-10-20T15:30:00+01:00"
 * code = $cs-loinc#9279-1 "Respiri"
 * status = #final
@@ -421,6 +437,7 @@ Description: "Esempio di un'osservazione: frequenza cardiaca a riposo"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * extension[dataRegistrazione].valueInstant = "2025-01-21T15:30:00+01:00"
 * code = $cs-loinc#40443-4 "Frequenza cardiaca^riposo"
 

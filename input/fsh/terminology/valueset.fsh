@@ -2,10 +2,12 @@
 ValueSet: VsAifaAIC
 Id: aifa-aic
 Title: "AIFA AIC"
-Description: "AIFA - Identifica i farmaci nella loro forma commerciale"
+Description: "ValueSet che comprende i codici di Autorizzazione all'Immissione in Commercio (AIC) definiti da AIFA. Poiché il sistema di codifica è gestito da AIFA, l'elenco completo dei codici deve essere reperito tramite le fonti ufficiali di AIFA"
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+//* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.5"
 
-* codes from system https://www.hl7.it/fhir/terminology/CodeSystem/aifa-aic
+* codes from system $cs-aifa-AIC
 * codes from system $aic
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -14,7 +16,8 @@ Id: vs-no-allergies
 Title: "No Allergies"
 Description: "Nessuna allergia oppure agente non noto"
 * ^experimental = false
-
+* ^identifier.system = "urn:ietf:rfc:3986"
+//* ^identifier.value = "urn:oid:2.16.840.1.113883.5.1150.1"
 * codes from system $cs-no-allergies
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -27,12 +30,12 @@ Description: "Nessuna allergia oppure agente non noto"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-ValueSet: VsASL
-Id: vs-ASL
-Title: "MDS - ASL"
-Description: "Valuset che raccoglie i codici per le Aziende Sanitarie Locali"
-* ^experimental = false
-* codes from system $cs-asl
+// ValueSet: VsASL
+// Id: vs-ASL
+// Title: "MDS - ASL"
+// Description: "Valuset che raccoglie i codici per le Aziende Sanitarie Locali"
+// * ^experimental = false
+// * codes from system $cs-asl
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ValueSet: VsAccess
@@ -40,16 +43,18 @@ Id: vs-access
 Title: "Atti clinici e regole di accesso"
 Description: "Atti clinici e regole di accesso"
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+// * ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.3"
 * codes from system $cs-accessRules
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-ValueSet: VsLoinc
-Id: vs-loinc-it
-Title: "Codici LOINC"
-Description: "Codici LOINC italiano"
-* ^experimental = false
-* codes from system $cs-loinc
+// ValueSet: VsLoinc
+// Id: vs-loinc-it
+// Title: "Codici LOINC"
+// Description: "Codici LOINC italiano"
+// * ^experimental = false
+// * codes from system $cs-loinc
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -72,6 +77,7 @@ Description: "Codici LOINC dei parametri vitali in italiano"
 * $cs-loinc#4548-4 "Emoglobina A1c/Emoglobina.totale"
 * $cs-loinc#88365-2 "Glucosio^pre-pasto"
 * $cs-loinc#3043-7 "Trigliceridi"
+* $cs-loinc#59261-8  "Hemoglobin A1c/Hemoglobin.total standardized per IFCC-RMP for CDT in Blood"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ValueSet: VsCND
@@ -79,6 +85,8 @@ Id: vs-it-cnd
 Title: "Classificazione Nazionale dei Dispositivi Medici (CND)"
 Description: "Classificazione Nazionale dei Dispositivi Medici (CND)"
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+//* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
 * codes from system $cs-cnd
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -87,7 +95,9 @@ Id: vs-it-class-code
 Title: "Classe documento"
 Description: "Valuset che rappresenta la classe a cui il documento appartiene"
 * ^experimental = false
-* codes from system http://hl7.it/fhir/taccuino/CodeSystem/class-code
+* ^identifier.system = "urn:ietf:rfc:3986"
+// * ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"
+* codes from system $cs-class-code
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

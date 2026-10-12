@@ -58,34 +58,46 @@ Le informazioni, definite nell’Allegato A del Decreto 7 settembre 2023 “Fasc
 <td></td>
 </tr>
 <tr class="odd">
-<td>Autore</td>
+<td>Responsabile</td>
 <td>Leonardo Alcaro</td>
 <td>CTO HL7</td>
 <td>leonardo.alcaro@gmail.com</td>
 </tr>
 <tr class="even">
-<td>Autore</td>
+<td>Responsabile</td>
 <td>Mario Sicuranza</td>
 <td>CNR ICAR</td>
 <td>mario.sicuranza@icar.cnr.it</td>
 </tr>
-<tr class="even">
-<td>Autore</td>
-<td>Valeria Cesarò</td>
-<td>EY Advisory S.p.A.</td>
-<td>valeria.cesaro@it.ey.com</td>
-</tr>
-<tr class="even">
-<td>Autore</td>
-<td>Alice Cappello</td>
-<td>EY Advisory S.p.A.</td>
-<td>alice.cappello1@it.ey.com</td>
-</tr>
 <tr class="odd">
-<td>Autore</td>
+<td>Componente</td>
 <td>Maria Giovanna Antida Preziosi</td>
 <td>SOGEI</td>
 <td>mpreziosi@sogei.it</td>
+</tr>
+<tr class="odd">
+<td>Componente</td>
+<td>Xhuliana Haxhi</td>
+<td>EY Advisory S.p.a.</td>
+<td>xhuliana.haxhi@it.ey.com</td>
+</tr>
+<tr class="odd">
+<td>Componente</td>
+<td>Chiara Fulgenzio</td>
+<td>EY Advisory S.p.a.</td>
+<td>chiara.fulgenzio@it.ey.com</td>
+</tr>
+<tr class="even">
+<td>Ex-Componente</td>
+<td>Valeria Cesarò</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr class="even">
+<td>Ex-Componente</td>
+<td>Alice Cappello</td>
+<td>N/A</td>
+<td>N/A</td>
 </tr>
 </tbody>
 </table>

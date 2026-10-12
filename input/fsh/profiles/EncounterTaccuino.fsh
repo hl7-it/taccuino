@@ -23,12 +23,12 @@ Description: "Rappresentazione dei contatti tra il paziente e le strutture sanit
 * class.system from ActEncounterCode (extensible)
 * serviceProvider 1..1
 * serviceProvider ^short = "Organizzazione responsabile del contatto con il paziente"
-* serviceProvider only Reference(OrganizationTaccuino)
+* serviceProvider only Reference(OrganizationItCore)
 * reasonCode ^short = "Motivazione del contatto"
 * reasonCode.coding.system from $reason (extensible)
 * participant.individual ^short = "Professionista sanitario coinvolto nel contatto"
-* participant.individual only Reference(Practitioner or PractitionerRole)
+* participant.individual only Reference(PractitionerItcore or PractitionerRoleItcore)
 * subject 1..1
 * subject only Reference (PatientTaccuino)
-* hospitalization.origin only Reference(Location or OrganizationTaccuino)
-* hospitalization.destination only Reference(Location or OrganizationTaccuino)
+* hospitalization.origin only Reference(Location or OrganizationItCore)
+* hospitalization.destination only Reference(Location or OrganizationItCore)

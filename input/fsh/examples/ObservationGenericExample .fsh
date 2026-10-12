@@ -6,6 +6,7 @@ Description: "Esempio di un'osservazione: segni e sintomi"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "3fdd0b81-0fc2-491d-bddb-d6cabf6d3dd8"
 * status = #final
 * extension[dataRegistrazione].valueInstant = "2025-03-09T15:30:00+01:00"
@@ -26,6 +27,7 @@ Description: "Esempio di un'osservazione: note generali riguardanti la febbre de
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "ff8f154f-7d4e-4830-9a75-3e1c26207173"
 * status = #final
 * extension[dataRegistrazione].valueInstant = "2025-02-06T15:30:00+01:00"
@@ -44,6 +46,7 @@ Description: "Esempio di un'osservazione: note generali relative ad un calo di p
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "626a554d-616d-46d5-8e91-cb6b4bbff785" 
 * status = #final
 * extension[dataRegistrazione].valueInstant = "2025-02-09T15:30:00+01:00"
@@ -62,6 +65,7 @@ Description: "Esempio di un'osservazione per un evento di vaccinazione"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "0ecdd63e-aa05-4a48-9bc2-1dc99018c5f8"
 * status = #final
 * extension[dataRegistrazione].valueInstant = "2025-01-21T15:30:00+01:00"
@@ -81,6 +85,7 @@ Description: "Esempio di un'osservazione: viaggi all'estero effettuati dall'assi
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "706c0582-d87a-41dd-9c7f-09a4aa80961c"
 * status = #final
 * effectivePeriod.start = "2025-01-01"
@@ -102,6 +107,7 @@ Description: "Esempio di un'osservazione: dolore"
 
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
+ 
 * id = "0fe610cd-e163-4566-85ea-1b65f168e1b7"
 * extension[dataRegistrazione].valueInstant = "2025-01-21T15:30:00+01:00"
 

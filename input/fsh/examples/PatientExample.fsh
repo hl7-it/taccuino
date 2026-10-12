@@ -6,6 +6,8 @@ Description: "Esempio di Paziente (donna) iscritta al SSN"
 
 
 * id = "e786443c-4786-4b88-b3e3-41a4b27681d1"
+ 
+* extension[luogoNascita].valueAddress.use = #home
 * extension[luogoNascita].valueAddress.line[+].extension[odonimo].valueString = "Via della Pace"
 * extension[luogoNascita].valueAddress.line[=].extension[houseNumber].valueString = "1"
 * extension[luogoNascita].valueAddress.line[=] = "Via della Pace, 1"
@@ -16,11 +18,12 @@ Description: "Esempio di Paziente (donna) iscritta al SSN"
 * extension[titoloStudio].valueCodeableConcept = $cs-titolo-studio-istat#40205013 "Giuridico economico aziendale"
 
 * identifier
-  * system = "http://hl7.it/sid/codiceFiscale"
+  * system = $CF
   * value = "VRDNGL89D43H501J" 
   * extension[certificazioneId].extension[when].valueDateTime = "2024-09-01"
 
 * extension[luogoNascitaCodeable].valueCodeableConcept = $cs-luogo-nascita#100 "Italia"
+* extension[luogoNascita].valueAddress.state = $cs-regioni#030 "Lombardia"
 
 
 * name.family = "Verdi"
@@ -32,12 +35,14 @@ Description: "Esempio di Paziente (donna) iscritta al SSN"
 
 * gender = #female
 
+* address.use = #home
 * address.city = "Roma"
 * address.country = "IT"
 * address.postalCode = "23839"
 * address.line = "Via Nazionale, 52"
-* address.use = #home
-* address.extension[residenza].valueBoolean = true
+* address.state = "Lazio"
+
+
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Instance: Patient-Taccuino-Esempio2
@@ -48,9 +53,12 @@ Description: "Esempio di Paziente (uomo) iscritto al SSN"
 
 
 * id = "4ec06b84-071a-4de2-b0eb-e24cda23fbaa"
+ 
+* extension[luogoNascita].valueAddress.use = #home
 * extension[luogoNascita].valueAddress.line[+].extension[odonimo].valueString = "Via Santa Cristina"
 * extension[luogoNascita].valueAddress.line[=].extension[houseNumber].valueString = "3"
 * extension[luogoNascita].valueAddress.line[=] = "Via Santa Cristina, 3"
+* extension[luogoNascita].valueAddress.state = $cs-regioni#010 "Piemonte"
 * extension[luogoNascita].valueAddress.city = "Torino"
 * extension[luogoNascita].valueAddress.postalCode = "10036"
 * extension[luogoNascita].valueAddress.country = "IT"
@@ -58,7 +66,7 @@ Description: "Esempio di Paziente (uomo) iscritto al SSN"
 * extension[titoloStudio].valueCodeableConcept = $cs-titolo-studio-istat#40202023 "Informatica"
 
 * identifier
-  * system = "http://hl7.it/sid/codiceFiscale"
+  * system = $CF
   * value = "BNCMHL90H12L219K" 
   * extension[certificazioneId].extension[when].valueDateTime = "2024-08-10"
 
@@ -74,9 +82,10 @@ Description: "Esempio di Paziente (uomo) iscritto al SSN"
 
 * gender = #male
 
+* address.use = #home
 * address.city = "Torino"
 * address.country = "IT"
 * address.postalCode = "10152"
 * address.line = "Via Cuneo, 10"
-* address.use = #home
-* address.extension[residenza].valueBoolean = true
+* address.state = "Piemonte"
+

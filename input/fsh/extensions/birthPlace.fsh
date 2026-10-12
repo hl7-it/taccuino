@@ -6,7 +6,7 @@ Description: "Definizione dell'indirizzo base per la descrizione del luogo di na
 * ^context.type = #element
 * ^context.expression = "Patient"
 * ^url = "http://hl7.it/fhir/taccuino/StructureDefinition/birth-place-ita"
-* value[x] only AddressItBase
+* value[x] only AddressItcore
 
 Extension: ExtCodeableBirthPlace
 Id: patient-codeableBirthPlace

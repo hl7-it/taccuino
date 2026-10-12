@@ -27,11 +27,11 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * type from $vs-loinc-td (required)
 
 * subject 1..1
-* subject only Reference (PatientTaccuino or Device)
+* subject only Reference(PatientTaccuino or Device)
 
-* author only Reference (Practitioner or PractitionerRole or OrganizationTaccuino or Device)
+* author only Reference(PractitionerItcore or PractitionerRoleItcore or OrganizationItCore or Device)
 * author ^short = "Autore del documento"
-* authenticator only Reference(OrganizationTaccuino)
+* authenticator only Reference(OrganizationItCore)
 
 
 * content.attachment.hash ^short = "Hash"
@@ -47,7 +47,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * category.coding.code 1..
 * category from $vs-class-code (required)
 
-* custodian only Reference(OrganizationTaccuino)
+* custodian only Reference(OrganizationItCore)
 
 * content.attachment.url ^short = "Identificativo repository"
 * content.format ^short = "Formato utilizzato (basso livello)"
